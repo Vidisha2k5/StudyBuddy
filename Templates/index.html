@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StudyBuddy</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        button {
+            margin-top: 10px;
+            margin-right: 10px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        input[type="text"], input[type="file"] {
+            padding: 10px;
+            width: calc(70% - 10px);
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #chat-response {
+            background: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            min-height: 100px;
+            white-space: pre-wrap;
+        }
+        .section {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>StudyBuddy</h1>
+
+        <div>
+            <input type="text" id="user-input" placeholder="Ask a question..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+        <div id="chat-response"></div>
+
+        <div class="section">
+            <input type="file" id="pdf-file" />
+            <button onclick="uploadPDF()">Upload PDF</button>
+            <button onclick="extractText()">Extract Text</button>
+            
+           </div>
+
+        <div class="section">
+            <button onclick="generateRoutine()">Generate Routine</button>
+            <button onclick="speakResponse()">Speak Response</button>
+            <button onclick="downloadText()">Download Text</button>
+            <button onclick="summarizeText()">Summarize Text</button> <!-- 🆕 -->
+
+          
+           
+          
+
+        </div>
+    </div>
+
+    <script>
+    async function sendMessage() {
+        const userInput = document.getElementById('user-input').value;
+        if (!userInput.trim()) {
+            alert('Please enter a question!');
+            return;
+        }
+
+        const response = await fetch('/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ question: userInput })
+        });
+
+        const data = await response.json();
+        document.getElementById('chat-response').innerText = data.question;
+    }
+
+    async function uploadPDF() {
+        const fileInput = document.getElementById('pdf-file');
+        const file = fileInput.files[0];
+        if (!file) {
+            alert('Please select a PDF file!');
+            return;
+        }
+
+        const formData = new FormData();
+        formData.append('file', file);
+
+        const response = await fetch('/upload_pdf', {
+            method: 'POST',
+            body: formData
+        });
+
+        const data = await response.json();
+        document.getElementById('chat-response').innerText = data.message;
+    }
+
+    async function generateRoutine() {
+        const daysLeft = prompt('Enter number of days left:');
+        if (!daysLeft || isNaN(daysLeft)) {
+            alert('Please enter a valid number of days!');
+            return;
+        }
+
+        const topics = prompt('Enter topics separated by commas:');
+        if (!topics) {
+            alert('Please enter some topics!');
+            return;
+        }
+
+        const topicsArray = topics.split(',').map(topic => topic.trim());
+
+        const response = await fetch('/get_routine', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                days_left: daysLeft,
+                topics: topicsArray
+            })
+        });
+
+        const data = await response.json();
+        document.getElementById('chat-response').innerText = data.routine.join('\n');
+    }
+
+    function speakResponse() {
+        const text = document.getElementById('chat-response').innerText;
+        if (!text) {
+            alert('There is no response to speak!');
+            return;
+        }
+
+        const utterance = new SpeechSynthesisUtterance(text);
+        speechSynthesis.speak(utterance);
+    }
+    function downloadText() {
+    const text = document.getElementById('chat-response').innerText.trim();
+    if (!text) {
+        alert("⚡ No text to download! First ask a question or upload a PDF.");
+        return;
+    }
+    const blob = new Blob([text], { type: "text/plain" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = "response.txt";
+    a.click();
+    URL.revokeObjectURL(url);
+}
+
+    // existing functions...
+
+    async function extractText() {
+        const fileInput = document.getElementById('pdf-file');
+        const file = fileInput.files[0];
+        if (!file) {
+            alert('Please select a PDF file first!');
+            return;
+        }
+
+        const formData = new FormData();
+        formData.append('file', file);
+
+        const response = await fetch('/extract_text', {
+            method: 'POST',
+            body: formData
+        });
+
+        const data = await response.json();
+        document.getElementById('chat-response').innerText = data.text;
+    }
+    async function summarizeText() {    <!-- 🆕 ADD THIS WHOLE FUNCTION -->
+    const text = document.getElementById('chat-response').innerText.trim();
+    if (!text) {
+        alert('No text available to summarize!');
+        return;
+    }
+
+    const response = await fetch('/summarize', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text: text })
+    });
+
+    const data = await response.json();
+    document.getElementById('chat-response').innerText = data.summary;
+  }
+
+    </script>
+</body>
+</html>

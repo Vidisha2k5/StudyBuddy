@@ -1,0 +1,313 @@
+AGRIDRIVE
+   "Transforming Agriculture For a Better Tomorrow "
+Category: Innovative approaches to sustainability in mobility (alternate energy sources /range 
+management / shared mobility / multi -modal mobility)
+Sparkle ID: INSP 25000718
+Project Title: A Six -Wheeled Autonomous Agricultural Bot for Real -Time Disease 
+Detection, Precision Pesticide Spraying, and Smart Soil Monitoring
+1.Suvankar  Pramanik
+2.Subhajit  Mondal
+3.Amit  Kumar  Duya
+4.Arpita  Das
+5.Vidisha  DasTeam Members: Unscientific Farming Methods → Big Losses!
+            
+ It’s time for a change
+– Introducing AgriDrive  
+!
+ Soil Degradation Overuse of 
+water and chemicals harms soil 
+health
+ Massive Yield Loss Farmers 
+lose ₹50,000+ per hectare due to 
+pests & diseases.
+Farmers lack access to 
+continuous crop health and soil 
+condition data, leading to 
+delayed actions.
+Problem Statement
+. Farming relies on guesswork 
+instead of smart, data-driven solutions! Precision Farming  Less 
+waste, higher yield, and 
+healthier crops.
+ Precision 
+Pesticide Spraying
+  
+according to the 
+disease (reduces 
+chemical waste)
+ Six-Wheeled 
+Terrain 
+Adaptability 
+ Hybrid Power System  Solar + 
+Battery for uninterrupted, eco -
+friendly operation
+ Real -Time Weather Insights
+ AI-Powered Crop Health 
+Monitoring and disease detection
+Solution
+Let's make 
+AGRIDRIVE
+Wow… nice idea… 
+but 
+What is 
+AgriDrive ? 
+ThisisAGRIDRIVE
+Corrosion 
+Free 
+(Aluminium 
+body)Innovation
+ Revolutionizing Smart Farming with AI & Automation!
+Smarter, Greener
+ AgriDrive –
+All-in-One Farming Bot Combines AI disease detection, precision spraying, 
+environmental monitoring, and solar power into one system.
+Hybrid Power System Solar + Battery for uninterrupted, eco -friendly operation
+That sounds 
+interesting! Can 
+you explain how 
+the battery 
+system works ?
+Existing Solutions FeatureAgriDrive   Advantage  
+AI-Driven Pesticide Spraying
+Onboard AI Processing
+Power Source
+Mobility
+Environmental Sensing
+Navigation & Obstacle 
+Avoidance
+Precision Farming ApproachManual or uniform spraying
+Cloud -based, requires internet
+Fuel -based or standard battery
+Limited to flat terrains
+Basic moisture sensors
+Basic GPS -based movement
+Generalized , non-adaptiveTargeted AI -based spraying , reducing chemical waste 
+Edge AI for real -time decisions, works offline 
+Solar -assisted hybrid system for sustainable farming  + 
+Battery for uninterrupted, eco -friendly operation  
+6-wheeled, multi -terrain design for all farmlands 
+Combination of soil moisture, Soil temp & humidity 
+insights  
+AI-driven autonomous row detection & obstacle detection  
+Smart farming decisions based on real -time crop analysis  
+Key Features
+Adaptable Size(Height 
+and width)Exists in some advanced robots 
+(e.g., Amiga, SentiV , SIZA 
+Robotics)Customizable for various farm layouts, improving 
+adaptability 
+Cost EfficiencyHigh Labor & Input costs 
+Expensive EquipmentCost Effective &Sustainable
+Technical  Architecture  & Workflow
+Previous 
+Prototype
+Bot Weather Prediction ModulePrototype
+Valve System
+Spray System
+RoverPump System
+Intelligent Battery 
+management System
+Working Prototype Video
+Video link -https://drive.google.com/file/d/10iC -qRCH21my8_HF8FGKb -pStoWRfxwa/view?usp=drivesdk
+Results For Rover
+  Training vs Validation Loss Analysis
+ Training vs Validation Accuracy  AnalysisModel Performance Over Epochs
+Key Partners
+ Farmers & 
+Agricultural 
+Cooperatives
+ Agri-Tech 
+Companies & 
+Research Institutes
+ Government 
+Schemes & Rural 
+Development 
+Programs
+ Hardware & 
+Sensor SuppliersKey Activities
+ AI-driven pesticide 
+spraying & crop health 
+monitoring
+ Field data 
+collection & real -time 
+decision -making
+ Development & 
+testing of autonomous 
+AgriDrive  bots
+ Partnerships for 
+large -scale deploymentValue 
+Proposition
+ Precision Farming  
+– AI-powered targeted 
+pesticide spraying  
+reduces waste
+ Cost Efficiency  – 
+Cuts pesticide,  and 
+labor  costs
+ Sustainable & 
+Smart  – Solar -
+assisted, multi -
+terrain, and fully 
+autonomous
+ Remote 
+Monitoring  – App-
+based farm insights  
+anytime, anywhereCustomer 
+Relationships  
+ Direct 
+engagement with 
+farmers via AgriTech  
+workshops
+ Online support 
+& real -time 
+assistance
+ Partnerships 
+with agribusinesses 
+& government for 
+bulk adoption
+Customer Segments
+ Small & Large -Scale Farmers
+ Agri-Tech Firms & Agri -Based Industries
+ Government Agricultural DepartmentsKey Resources
+ AI-powered 
+pesticide spraying 
+system
+ Solar -assisted 
+hybrid power 
+system
+ Multi -terrain 
+autonomous 
+navigation
+ Cloud & edge 
+computing for real -
+time insightsRevenue Streams
+ Product Sales  – 
+AgriDrive   units for 
+farmers & AgriTech  firms
+ Subscription Model  – 
+AI-based analytics & 
+remote monitoring 
+services
+ Government & NGO 
+Funding  – For smart 
+farming adoption
+ After -Sales Services  
+– Maintenance, training, 
+and upgradesChannels
+ Direct Sales & 
+AgriTech  Expos
+ Mobile App for 
+Remote Control & 
+Monitoring
+ Partnerships with 
+Agri-Businesses & Gov 
+SchemesCost Structure
+ R&D & Prototyping
+ Hardware & Sensor 
+Costs
+ Manufacturing & 
+Deployment
+ Cloud & AI Software 
+Maintenance
+Business Model CanvasValue  Proportion  Canvas
+Spray Smart, Save More, Grow Better!
+Gain Creators
+  AI-driven smart pesticide 
+spraying 
+ 
+ Solar -assisted hybrid power  
+ Autonomous field operations  
+ Real -time crop health monitoring  
+Pain Relievers
+ Eliminates manual pesticide 
+application
+ Prevents overuse of pesticides
+ Reduces dependency on fossil fuels
+ 
+ Remote monitoring & control
+Product & Service
+ AI-powered agricultural bot
+ Mobile app integration
+ Advanced sensors
+ 150M+ Farmers in India  – 
+Huge adoption potential for AI -
+driven solutions
+ 50% Cost Reduction  – 
+Saves on pesticides, water, 
+and labor
+ Govt Push for Agri -Tech  – 
+Schemes supporting automation & 
+sustainability
+ AgriDrive   taps into a booming market with high scalability!
+Market Potential
+ Indian machinery market is 
+increasing day by day  in 2023 it 
+was $ 9.7 Billion and it will grow 
+up to $37Billion till Year 2033Product  Of Cost  
+1st Stage
+2nd Stage
+3rd Stage
+4th Stage
+Prototype Development StagesFuture  Plans
+ Integration of AgriDrive , 
+Vayu and Bhumi
+From Smart Assistance to 
+Fully Autonomous 
+Agriculture!  
+RoverBhumi
+Drone(Vayu)BHUMI & VAYU: Smart Farming from Ground to Sky! 
+Meet BHUMI & V AYU – the smart farming duo!  
+ Ground & Sky Working Together for a Greener Future!
+ BHUMI (Ground Bot)  
+Soil moisture sensing(NPK 
+Sensor) & precision irrigation
+ VAYU (Aerial Unit)  
+Drone -based ET sensing & 
+crop health monitoring
+ Smart Coordination 
+AI-driven insights for 
+optimized farming
+ Seamless Integration 
+with AgriDrive  Complete 
+field Automation
+Video Link:
+ -
+ 
+https://drive.google.com/file/d/
+ 10
+jX
+-
+j
+9
+emtqCFegCWQjRSIMw
+ 73
+tFNOvp
+ 6
+/view?usp=drivesdk
+Results for Drone
+ Payback Analysis – Smart Investment, Faster 
+Returns 
+ Invest in AgriDrive , Harvest the Future
+ !
+ Cost Savings 
+Reduces water, 
+pesticide & labor 
+costs
+ Increased 
+Yield  AI -driven 
+precision boosts 
+crop production
+ Fast ROI Pays 
+for itself within [X] 
+seasons
+ Low 
+Maintenance  Solar -
+assisted system 
+reduces operational 
+costs
+ Scalability  
+Suitable for small & 
+large farms, 
+maximizing profits
+Sustainability
+Field Survey
